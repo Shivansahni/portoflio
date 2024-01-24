@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivan Sahni- Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="P1.jpg" type="image/jpg">
+</head>
+<body>
+         <!-- navigation bar -->
+<header>
+    <div id="navbar-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="navbar">
+      <ul id="navbar-list">
+             <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- about -->
+    <section id="about">
+             <div class="text">
+                <div class="titletext">
+                    <h2 class="display">Hi, i am Shivan</h2>
+                    <div class="circle">
+                        <img class="img" src="P1.jpg">
+                    </div>
+                </div>
+                <div class="abouttext">
+                    <h6 class="aboutintro">I am a Frontend Web Developer, an engineer and an Open Soucre Enthusiast.</h6>
+                </div>
+            </div>    
+    </section>
+
+    <!-- projects -->
+    <section id="projects">
+     <hr>   <h2>Projects</h2> <hr>
+        <div class="project">
+            <h3>Project 1 : Movie Search App</h3>
+            <img src="project1_a.PNG" alt="Project 1">
+            <img src="project1_b.PNG" alt="Project 1">
+            <p>Developed a Movie Search App having the feature to search the movies 
+                from OMDB using framework React JS</p>
+            <a href="https://reactmoviesearch1.netlify.app/" target="_blank">View Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2 : Weather Forecast Web application </h3>
+            <img src="project2_b.PNG" alt="Project 2">
+            <img src="project2_a.PNG" alt="Project 2">
+            <p> A Fully featured Weather Forecast Web application implemented
+with all the best practices using Framework React JS.</p>
+            <a href="https://reactweatherapp3.netlify.app/" target="_blank">View Project</a>
+        </div>
+    </section>
+
+        <!-- contacts -->
+
+    <section id="contact">
+     <hr>   <h2>Contact Me</h2> <hr>
+        <form action="#" method="post" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+<script>
+    // JavaScript for toggling the mobile menu
+    document.getElementById("navbar-toggle").addEventListener("click", function() {
+      document.getElementById("navbar").classList.toggle("show");
+    });
+    </script>
+</body>
+</html>
